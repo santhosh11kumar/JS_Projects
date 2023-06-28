@@ -1,0 +1,86 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'WindSong', cursive;
+}
+.title{
+    font-size: 6rem;
+    padding-block: 1rem;
+    color:rgb(163, 163, 163);
+    font-weight: 900;
+}
+.hero_sec{
+    position: relative;
+    width: 60vw;
+    height:60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.img_sec{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    height: 60vh;
+    width: 80px;
+    border-radius: 40px;
+    opacity: 0.6;
+    transition:width 0.4s ease-in;
+    overflow:scroll;
+     -ms-overflow-style: none; 
+}
+.content{
+    position: relative;
+    opacity: 0;
+    height: 100%;
+    padding: 1rem;
+    font-family: 'Kalam', cursive;
+    color: white;
+     background-color: rgba(128, 128, 128, 0.507);
+     transition: opacity 0.4s ease-in;
+     
+}
+.content:hover{
+    opacity: 1;
+}
+.img_sec::-webkit-scrollbar {
+    display: none;
+}
+
+.active{
+    width:100rem;
+    opacity: 1;
+}
+.swipe_img{
+    width: 8rem;
+}
+.btn_left{
+    position: absolute;
+    top: 50%;
+    right: 90%;
+}
+.btn_right{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+
+}
+.right_swipe{
+    
+    transform: rotate(180deg);
+}
