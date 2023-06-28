@@ -10,7 +10,6 @@ curr_img.forEach((img,index)=>{
         removeactivefromremaining();
         img.classList.add("active");
         curr_index= index;
-        console.log(index,curr_index,"1");
         
     });
  

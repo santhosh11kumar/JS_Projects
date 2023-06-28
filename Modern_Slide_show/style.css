@@ -9,17 +9,28 @@
 }
 body{
     background-color: antiquewhite;
+    font-family: 'WindSong', cursive;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divcenter{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'WindSong', cursive;
+    width: 80vw;
 }
 .title{
     font-size: 6rem;
     padding-block: 1rem;
     color:rgb(163, 163, 163);
     font-weight: 900;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
 }
 .hero_sec{
     position: relative;
@@ -84,3 +95,30 @@ body{
     
     transform: rotate(180deg);
 }
+@media only screen and (max-width: 1200px) {
+    
+    .content{
+        height: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 1800px) {
+    .content{
+        height: 100%;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    .hero_sec{
+        gap: 10px;
+    }
+    .swipe_img{
+        width: 4rem;
+    }
+    .content{
+        font-size: 1rem;
+    }
+    
+}
+
