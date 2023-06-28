@@ -64,6 +64,7 @@ body{
     color: white;
      background-color: rgba(128, 128, 128, 0.507);
      transition: opacity 0.4s ease-in;
+     padding: 1rem;
      
 }
 .content:hover{
@@ -106,18 +107,40 @@ body{
 @media only screen and (min-width: 1800px) {
     .content{
         height: 100%;
+        font-size: 3rem;
     }
     
 }
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     .hero_sec{
-        gap: 10px;
+        flex-wrap: wrap;
+        height: 150vh;
+        width: 90vw;
+
+    }
+    .img_sec{
+        position: relative;
+        background-size: 100% auto  ; 
+        height: 10vh;
+        width: 90vw;
+        transition:height 0.4s ease-in;
+    }
+    .active{
+        height: 20%;
     }
     .swipe_img{
         width: 4rem;
     }
+    .btn_left,.btn_right{
+        top: 20%;
+    }
     .content{
+        position: absolute;
         font-size: 1rem;
+        height: auto;
+        top: 0;
+        overflow: hidden;
+        font-size: 2rem;
     }
     
 }
