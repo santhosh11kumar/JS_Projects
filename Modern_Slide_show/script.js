@@ -22,6 +22,7 @@ function removeactivefromremaining(){
 }
 left_swipe.addEventListener('click',()=>{
     if(curr_index>0){
+        
         removeactivefromremaining();
         curr_img[curr_index-1].classList.add("active");
         curr_index-=1;

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(243, 246, 248);
+}
+.divcenter{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 3rem;
+}
+.title{
+    
+    font-family: 'Charm', cursive;
+    color: rgba(0, 0, 0, 0.685);
+    position: absolute;
+    top: 5%;
+}
+.her_sec_1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+
+.her_sec_1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    border-radius: 0.3rem;
+    background-color: #e0e0ee;
+    z-index: -5;  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.progress_line{
+    position: absolute;
+    width: 0%;
+    height: 8px;
+    border-radius: 0.3rem;
+    top: 50%;
+    z-index: -5;
+    background-color: #3498dbb9;
+    transform: translateY(-5px);
+    transition: width 0.5s ease-out;
+}
+.circle{
+    background-color: #fff;
+    color: rgb(34, 34, 34);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #bdbdbd;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+.active{
+    border-color: #59b7f7b9;
+    transform: scale(1.1);
+    transition: all 0.2s ease-out 0.3s;
+}
+.btn{
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #3498dbe0;
+    color: azure;
+    width: 6rem;
+    
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.btn:disabled{
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+
+@media screen and (max-width:600px) {
+
+    
+    .divcenter{
+        gap: 15px;
+    }
+    .her_sec_1{
+        width: 100vw;
+    }
+
+}
+@media screen and (min-width:1800px) {
+    .title{
+        font-size: 8rem;
+        text-align: center;
+    }
+    .divcenter{
+        gap: 15rem;
+    }
+    .her_sec_1{
+        padding-top:12rem ;
+        width: 80vw;
+    }
+    .progress_line{
+        margin-top: 6rem;
+    }
+    .hero_sec_2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+    }
+    .circle{
+        width: 15rem;
+        height: 15rem;
+        font-size: 8rem;
+    }
+    .btn{
+        padding: 3rem;
+        width: 18rem;
+        text-align: center;
+        font-size: 3rem;        
+    }
+
+}
+@media  (max-width: 350px) {
+    .title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .her_sec_1{
+        width: 95vw;
+        padding-top: 9rem;
+    }
+    .progress_line{
+        margin-top: 4.5rem;
+    }
+    .hero_sec_2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        gap: 3rem;  
+        margin-block: 2rem;
+    }
+    .circle{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+    .btn{
+        padding: 1rem;
+        border-radius: 10px;
+        width: 8rem;
+        text-align: center;
+        font-size: 1.5rem;  
+    }
+}
